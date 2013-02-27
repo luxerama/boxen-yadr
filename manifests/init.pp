@@ -3,7 +3,7 @@ class yadr {
   include homebrew
   include zsh
 
-  $yadr_root = "${luser}/.yadr"
+  $yadr_root = "/Users/${luser}/.yadr"
 
   repository { "${yadr_root}/":
     source => "luxerama/yadr"
