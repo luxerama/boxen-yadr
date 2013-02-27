@@ -1,6 +1,7 @@
 class yadr {
   include boxen::config
   include homebrew
+  include zsh
 
   $yadr_root = "${luser}/.yadr"
 
