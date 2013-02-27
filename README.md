@@ -18,3 +18,8 @@ include yadr
 
 Write code. Run `script/cibuild` to test it. Check the `script`
 directory for other useful tools.
+
+## Todo
+1. Figure out whether its save to source boxen's env.sh
+2. Testing
+3. Allow other forks
