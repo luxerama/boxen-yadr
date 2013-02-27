@@ -3,15 +3,16 @@ class yadr {
   include homebrew
   include zsh
 
-  $yadr_root = "/Users/${luser}/.yadr"
+  $home     = "/Users/${::luser}"
+  $dotfiles = "${home}/.yadr"
 
-  repository { "${yadr_root}/":
-    source => "luxerama/yadr"
+  repository { $dotfiles:
+    source  => 'luxerama/dotfiles',
   }
 
-  exec { "${yadr_root}":
-    cwd => $yadr_root,
+  exec { "install":
+    cwd => $dotfiles,
     command => "rake install",
-    require => Repository[$yadr_root]
+    require => Repository[$dotfiles]
   }
 }
