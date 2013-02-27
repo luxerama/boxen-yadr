@@ -12,6 +12,7 @@ include yadr
 
 * `boxen`
 * `brew`
+* `zsh`
 
 ## Development
 
